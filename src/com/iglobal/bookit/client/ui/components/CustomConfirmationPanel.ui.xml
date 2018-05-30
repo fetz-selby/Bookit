@@ -1,0 +1,23 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		
+	</ui:style>
+	<g:HTMLPanel>
+	    <section class="panel panel-default confirmpop-style">
+			<header class="panel-heading confirmpop-header">
+				<span class="h4 confirmpop-header-txt" ui:field="formTitle">Confirm ...</span>
+				<span class="pull-right font-bold form-close-icon" style="color: #FFFFFF;" ui:field="closeBtn">x</span>
+			</header>
+			<div class="panel-body">
+				<span class="text-muted" ui:field="message">Are you sure you want to continue with the operation.</span>
+			</div>
+			
+			<footer class="panel-footer text-right bg-light lter">
+			    <g:Anchor href="javascript:void(0)" styleName="h4 text-success confirmpop-cancel-link" ui:field="cancelLink" />
+				<g:Button styleName="btn btn-primary btn-s-xs confirmpop-button" ui:field="continueBtn">Continue</g:Button>
+			</footer>
+		</section>
+	</g:HTMLPanel>
+</ui:UiBinder> 

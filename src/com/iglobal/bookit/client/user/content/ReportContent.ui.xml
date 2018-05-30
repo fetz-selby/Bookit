@@ -1,0 +1,25 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		
+	</ui:style>
+	<g:HTMLPanel styleName="row report-panel-style">
+	    <div class="col-md-11 user-report-help m-l-lg">
+	        <span class="font-bold m-r-md user-report-help-text"><p>Reports are generated based on the selected Book.</p><p>The result format of the report is .xls. </p><p>This can be viewed using third party applications like MS Excel, Numbers, Open SpreedSheet and etc.</p><p></p></span>
+	    </div>
+	    
+	    <div class="col-md-12 report-search-style">
+	        <div class="col-md-12 "><span class="font-bold">Search Book</span></div>
+	        <g:SimplePanel styleName="col-md-7" ui:field="searchPanel"></g:SimplePanel>
+	    </div>
+	    
+	    <g:SimplePanel styleName="m-b-lg col-md-12 report-booklist-style" ui:field="booklistPanel">
+	        
+	    </g:SimplePanel>
+	    
+	    <div class="col-md-12 report-booklist-style pull-right" ui:field="optionPanel">
+	        <g:Anchor href="javascript:void(0)" styleName="btn btn-s-lg btn-primary pull-right m-r" ui:field="nextBtn"/>
+	    </div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

@@ -1,0 +1,19 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+
+	</ui:style>
+	<g:HTMLPanel styleName="admin-sidebar-div">
+		<ul class="nav nav-main" data-ride="collapse" ui:field="ulElement">
+<!-- 
+			<li>
+				<a href="javascript:void(0)" class="auto" id="adminMenu">
+					<i class="i i-statistics icon">
+					</i>
+					<span class="font-bold theme2-menuarea-fontcolor2">Admins</span>
+				</a>
+			</li> -->
+		</ul>
+	</g:HTMLPanel>
+</ui:UiBinder> 

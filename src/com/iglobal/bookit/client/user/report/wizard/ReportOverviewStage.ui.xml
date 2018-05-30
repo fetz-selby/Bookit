@@ -1,0 +1,42 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+	</ui:style>
+	<g:HTMLPanel styleName="row report-panel-style">
+	    <div class="col-md-12 m-b-xs">
+	        <div class="user-report-overview-title-style">
+	        <span class="font-bold">Book Name :</span></div>
+	        <span class="font-bold user-report-overview-values" ui:field="bookNameSpan"></span>
+	    </div>
+	    
+	     <div class="col-md-12 m-b-xs">
+	         <div class="user-report-overview-title-style">
+	        <span class="font-bold">Groups :</span></div>
+	        <span class="font-bold user-report-overview-values" ui:field="groupsSpan"></span>
+	    </div>
+	    
+	    <div class="col-md-12 m-b-xs">
+	        <div class="user-report-overview-title-style">
+	        <span class="font-bold">Created By :</span></div>
+	        <span class="font-bold user-report-overview-values" ui:field="createdbySpan"></span>
+	    </div>
+	    
+	    <div class="col-md-12 m-b-xs">
+	        <div class="user-report-overview-title-style">
+	        <span class="font-bold">Created Date :</span></div>
+	        <span class="font-bold user-report-overview-values" ui:field="createdDateSpan"></span>
+	    </div>
+	    
+	    <div class="col-md-12 m-b-xs">
+	        <div class="user-report-overview-title-style">
+	        <span class="font-bold">Requested Fields :</span></div>
+	        <span class="font-bold user-report-overview-values" ui:field="requestedFieldsSpan"></span>
+	    </div>
+	    
+	    <div class="col-md-12 m-t-lg">
+	        <g:Anchor href="javascript:void(0)" styleName="btn btn-s-lg btn-primary pull-left" ui:field="prevBtn" />
+			<g:Anchor href="javascript:void(0)" styleName="btn btn-s-lg btn-primary pull-right m-r-lg user-report-overview-download-style" ui:field="downloadBtn" />
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

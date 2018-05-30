@@ -1,0 +1,30 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		
+	</ui:style>
+	<g:HTMLPanel ui:field="mainPanel">
+	    <section class="panel panel-default confirmpop-style">
+			<header class="panel-heading confirmpop-header">
+				<span class="h5 confirmpop-header-txt" ui:field="formTitle">Edit Picture</span>
+				<span class="pull-right font-bold form-close-icon" style="color: #FFFFFF;" ui:field="closeBtn">x</span>
+			</header>
+			
+			<div class="panel-body">
+				<g:Image ui:field="avatarPanel" styleName="pull-left m-r-sm"/>
+				
+				<g:FormPanel ui:field="form" styleName="pull-right m-t-lg">
+					<g:FileUpload ui:field="fileUploader"></g:FileUpload>
+				</g:FormPanel>
+			</div>
+			
+			<footer class="panel-footer text-right bg-light lter">
+			    <g:Anchor href="javascript:void(0)" styleName="h4 text-success confirmpop-cancel-link" ui:field="cancelLink" />
+				<g:Button styleName="btn btn-primary btn-s-xs confirmpop-button" ui:field="saveBtn">save</g:Button>
+			</footer>
+		</section>
+		<g:FormPanel styleName="gwt-hide" ui:field="updateForm"></g:FormPanel>
+		<g:FlowPanel styleName="gwt-hide" ui:field="queryStringContainer"></g:FlowPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 

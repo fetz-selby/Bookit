@@ -1,0 +1,22 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+
+	</ui:style>
+	<g:HTMLPanel styleName="row-style m-l m-b-xs">
+		<g:Label styleName="hidden-xs col-sm-3 col-md-1 col-lg-1 m-r-xs m-l-sm"
+			ui:field="idField">1</g:Label>
+		<g:Label styleName="hidden-xs hidden-sm col-md-2 col-lg-2 m-r-xs m-l-sm"
+			ui:field="nameField">John Smith</g:Label>
+		<g:Label styleName="col-xs-5 col-sm-3 col-md-2 col-lg-2 m-r-xs m-l-sm"
+			ui:field="emailField">johnsmith@iglobalgh.com</g:Label>
+		<g:Label styleName="hidden-xs hidden-sm col-md-2 col-lg-2 m-r-xs m-l-sm"
+			ui:field="permsField">Read, Update</g:Label>
+		<g:Label styleName="hidden-xs hidden-sm hidden-md col-lg-2 m-r-xs m-l-sm"
+			ui:field="dateField">2014-02-01 12:08 GMT</g:Label>
+		<g:Label styleName="hidden-xs hidden-sm hidden-md col-lg-1 m-l-sm" ui:field="statusField">active</g:Label>
+		<a href="javascript:void(0)" class="col-xs-5 col-sm-3 col-md-3 col-lg-1 m-l-sm row-edit" ui:field="actionField"> - </a>
+		
+	</g:HTMLPanel>
+</ui:UiBinder> 

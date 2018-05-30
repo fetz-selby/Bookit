@@ -1,0 +1,26 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.main-style{border: 1px solid #424043; padding: 5px; border-radius: 15px;}
+		.float-style{float: left;}
+		.counter-style{padding-right: 5px;}
+		.close-btn-style{color: #550B00;}
+		.close-btn-style:hover{cursor: pointer;}
+		.img-style{width: 12px; height: 12px; margin: 3px;}
+	</ui:style>
+	<g:HTMLPanel ui:field="mainPanel" styleName="row m-b-xs {style.main-style}">
+	
+	
+	<div class="row">
+	<div class="col-md-11">
+		<div ui:field="notiCloseBtn" class="pull-right {style.close-btn-style}">x</div>
+	</div>
+	<div class="col-md-10">
+		<div class="{style.float-style}"><img class="{style.img-style}" src="images/circle_blue.png" /></div>
+		<div class="{style.float-style} {style.counter-style}" ui:field="counterDiv">15</div>
+		<div class="{style.float-style}" ui:field="statementDiv">alerts from Alerts</div>
+	</div>
+	</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

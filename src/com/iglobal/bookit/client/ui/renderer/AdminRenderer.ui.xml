@@ -1,0 +1,8 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:c="urn:import:com.iglobal.bookit.client.layout.components">
+	<ui:style>
+	</ui:style>
+	<g:HTMLPanel styleName="m-l" ui:field="panel">
+	</g:HTMLPanel>
+</ui:UiBinder> 

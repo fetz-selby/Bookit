@@ -1,0 +1,17 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+
+	</ui:style>
+	<g:HTMLPanel styleName="col-sm-3 m-b m-t pull-right global-search">
+				<div class="form-group m-b-none">
+					<div class="input-group">
+						<g:TextBox styleName="form-control" ui:field="textBox"/>
+							<span class="input-group-btn">
+								<g:Button styleName="btn btn-default btn-icon" ui:field="searchBtn"/>
+							</span>
+					</div>
+				</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

@@ -1,0 +1,42 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		
+	</ui:style>
+	<g:HTMLPanel>
+	    <ul class="list-group gutter list-group-lg list-group-sp sortable ui-sortable" ui:field="ulElement">
+										
+									<!-- 	<li class="list-group-item bg-primary" draggable="true" style="position: relative;">
+											<span class="pull-right"> <a href="#"><i class="fa fa-pencil fa-fw m-r-xs"></i></a> <a href="#"><i class="fa fa-plus fa-fw m-r-xs"></i></a> <a href="#"><i class="fa fa-times fa-fw"></i></a>
+										</span> <span class="pull-left media-xs"><i class="fa fa-sort text-muted fa m-r-sm"></i> 02</span>
+											<div class="clear text-white">Looking for more example
+												templates</div>
+										</li>
+										
+										
+										<li class="list-group-item bg-info" draggable="true" style="display: block; position: relative;">
+										    <span class="pull-right">
+												<a href="#"><i class="fa fa-pencil fa-fw m-r-xs"></i></a> <a href="#"><i class="fa fa-plus fa-fw m-r-xs"></i></a> <a href="#"><i class="fa fa-times fa-fw"></i></a>
+										</span> <span class="pull-left media-xs"><i class="fa fa-sort text-muted fa m-r-sm"></i> 01</span>
+											<div class="clear text-white">Browser compatibility</div></li>
+										
+										<li class="list-group-item" draggable="true"><span class="pull-right"> <a href="#"><i class="fa fa-pencil icon-muted fa-fw m-r-xs"></i></a> <a href="#"><i class="fa fa-plus icon-muted fa-fw m-r-xs"></i></a>
+												<a href="#"><i class="fa fa-times icon-muted fa-fw"></i></a>
+										</span> <span class="pull-left media-xs"><i class="fa fa-sort text-muted fa m-r-sm"></i> 04</span>
+											<div class="clear">The fastest way to get started</div></li>
+											
+										<li class="list-group-item" draggable="true" style="position: relative;"><span class="pull-right"> <a href="#"><i class="fa fa-pencil icon-muted fa-fw m-r-xs"></i></a> <a href="#"><i class="fa fa-plus icon-muted fa-fw m-r-xs"></i></a>
+												<a href="#"><i class="fa fa-times icon-muted fa-fw"></i></a>
+										</span> <span class="pull-left media-xs"><i class="fa fa-sort text-muted fa m-r-sm"></i> 05</span>
+											<div class="clear">HTML5 doctype required</div></li>
+											
+										<li class="list-group-item bg-success" draggable="true" style="display: block; position: relative;"><span class="pull-right">
+												<a href="#"><i class="fa fa-pencil fa-fw m-r-xs"></i></a> <a href="#"><i class="fa fa-plus fa-fw m-r-xs"></i></a> <a href="#"><i class="fa fa-times fa-fw"></i></a>
+										</span> <span class="pull-left media-xs"><i class="fa fa-sort text-muted fa m-r-sm"></i> 03</span>
+											<div class="clear text-white">Customizing components</div></li>
+										 -->
+									</ul>
+	    
+	</g:HTMLPanel>
+</ui:UiBinder> 

@@ -1,0 +1,14 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		
+	</ui:style>
+	<g:HTMLPanel styleName="m-l user-report-search-detail-style">
+	    <div class="pull-left">
+	        <span class="font-bold user-report-search-detail-text user-report-search-detail-title" ui:field="bookNameSpan">Book A</span>
+	    </div>
+	    
+	    <g:SimplePanel styleName="pull-right col-md-4" ui:field="detailPanel"></g:SimplePanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 

@@ -1,0 +1,7 @@
+# Module bookit
+# RPC service class, partial path of RPC policy file
+com.iglobal.bookit.client.AdminUpdateService, AD0E0278BF6CF0A65D8703F4D64EA4A4.gwt.rpc
+com.iglobal.bookit.client.AdminService, 73610550E741B71929606BF31127C7A0.gwt.rpc
+com.iglobal.bookit.client.LoginService, 2F84021506922C0DD4C611D95BE47490.gwt.rpc
+com.iglobal.bookit.client.UserService, 3777CCC9A1CAFCD37D6BDE1474DC22E2.gwt.rpc
+com.iglobal.bookit.client.AdminNewService, F5B135ECEC181D4711303EF56281EA95.gwt.rpc

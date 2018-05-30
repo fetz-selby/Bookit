@@ -1,0 +1,2 @@
+serviceClass: com.iglobal.bookit.client.LoginService
+path: 2F84021506922C0DD4C611D95BE47490.gwt.rpc

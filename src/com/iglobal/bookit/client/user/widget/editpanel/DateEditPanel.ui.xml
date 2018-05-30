@@ -1,0 +1,26 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:u="urn:import:com.iglobal.bookit.client.user.widget">
+	<ui:style>
+		
+	</ui:style>
+	<g:HTMLPanel>
+	<section class="panel panel-default confirmpop-style">
+			<header class="panel-heading confirmpop-header">
+				<span class="h5 confirmpop-header-txt" ui:field="formTitle">Edit</span>
+				<span class="pull-right font-bold form-close-icon" style="color: #FFFFFF;" ui:field="closeBtn">x</span>
+			</header>
+			
+			<div class="panel-body">
+				<div class="form-group">
+					<u:EViewCalendar ui:field="dateCalendar"></u:EViewCalendar>
+				</div>				
+			</div>
+			
+			<footer class="panel-footer text-right bg-light lter">
+			    <g:Anchor href="javascript:void(0)" styleName="h4 text-success confirmpop-cancel-link" ui:field="cancelLink" />
+				<g:Button styleName="btn btn-primary btn-s-xs confirmpop-button" ui:field="saveBtn">save</g:Button>
+			</footer>
+		</section>
+	</g:HTMLPanel>
+</ui:UiBinder> 

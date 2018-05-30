@@ -1,0 +1,30 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+
+	</ui:style>
+	<g:HTMLPanel styleName="m-b-lg">
+		 <div class="hidden-xs col-sm-3 col-md-1 col-lg-1 m-r-xs m-l-sm header-cell" style="display:none;">
+	        Id
+	    </div>
+	    <div class="hidden-xs hidden-sm col-md-2 col-lg-2 m-r-xs m-l-sm header-cell" >
+	        Name
+	    </div>
+	    <div class="col-xs-5 col-sm-3 col-md-2 col-lg-2 m-r-xs m-l-sm header-cell" >
+	        Email
+	    </div>
+	    <div class="hidden-xs hidden-sm col-md-2 col-lg-2 m-r-xs m-l-sm header-cell" >
+	        Permissions
+	    </div>
+	    <div class="hidden-xs hidden-sm hidden-md col-lg-2 m-r-xs m-l-sm header-cell" >
+	        Created Date
+	    </div>
+	    <div class="hidden-xs hidden-sm hidden-md col-lg-1 m-r-xs m-l-sm header-cell" >
+	        Status
+	    </div>
+	    <div class="col-xs-5 col-sm-3 col-md-2 col-lg-1 m-l-sm header-cell" >
+	        Action
+	    </div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

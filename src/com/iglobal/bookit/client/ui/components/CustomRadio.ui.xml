@@ -1,0 +1,13 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		
+	</ui:style>
+	<g:HTMLPanel styleName="radio">
+	        <label> 
+	            <g:SimplePanel ui:field="radioDiv"></g:SimplePanel>
+	        	<span ui:field="radioLabel">Option one is this and that—be sure to include why it's great</span>
+	        </label>
+	</g:HTMLPanel>
+</ui:UiBinder> 

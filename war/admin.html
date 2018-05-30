@@ -1,0 +1,330 @@
+
+<!DOCTYPE html>
+<html lang="en" class="app">
+<head>
+<meta charset="utf-8" />
+<title>eBookit | Web Application</title>
+<meta name="description"
+	content="app, web app, responsive, admin dashboard, admin, flat, flat ui, ui kit, off screen nav" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1" />
+<link rel="stylesheet" href="css/app.v1.css" type="text/css" />
+<link rel="stylesheet" href="css/override_css.css" type="text/css" />
+<link rel="stylesheet" href="js/datepicker/datepicker.css"
+	type="text/css" />
+
+<!--[if lt IE 9]> <script src="js/ie/html5shiv.js"></script> <script src="js/ie/respond.min.js"></script> <script src="js/ie/excanvas.js"></script> <![endif]-->
+<script src="js/app.v1.js"></script>
+<script src="js/app.plugin.js"></script>
+<!-- <script src="js/jquery-1.10.2.min.js"></script>
+ -->
+<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+<!-- <script src="js/bootstrap.min.js"></script>
+ -->
+<!-- <script src="js/datepicker/bootstrap-datepicker.js"></script>
+ -->
+
+<script type="text/javascript" language="javascript"
+	src="js/bootstrap-datepicker_new.js"></script>
+<script type="text/javascript" language="javascript"
+	src="js/bootstrap-timepicker.js"></script>
+
+<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+ -->
+<link rel="stylesheet" type="text/css" href="css/datepicker_new.css" />
+<link rel="stylesheet" type="text/css" href="css/sels_datepicker.css" />
+
+<link rel="stylesheet" type="text/css"
+	href="css/bootstrap-timepicker.css" />
+
+
+<script type="text/javascript" language="javascript"
+	src="bookit/bookit.nocache.js"></script>
+</head>
+<body class="">
+
+	<iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1'
+		style="position: absolute; width: 0; height: 0; border: 0"></iframe>
+
+	<!-- RECOMMENDED if your web app will not function without JavaScript enabled -->
+	<noscript>
+		<div
+			style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+			Your web browser must have JavaScript enabled in order for this
+			application to display correctly.</div>
+	</noscript>
+	<section class="vbox">
+		<header
+			class="bg-white header header-md navbar navbar-fixed-top-xs box-shadow">
+			<div class="navbar-header aside-md dk">
+				<a class="btn btn-link visible-xs"
+					data-toggle="class:nav-off-screen,open" data-target="#nav,html">
+					<i class="fa fa-bars"></i>
+				</a> <a href="index.html" class="navbar-brand"> <img
+					src="images/logo.png" class="m-r-sm" alt="scale"> <span
+					class="hidden-nav-xs">eBookit</span>
+				</a> <a class="btn btn-link visible-xs" data-toggle="dropdown"
+					data-target=".user"> <i class="fa fa-cog"></i>
+				</a>
+			</div>
+			<!-- <ul class="nav navbar-nav hidden-xs">
+				<li class="dropdown"><a href="#" class="dropdown-toggle"
+					data-toggle="dropdown"> <i class="i i-grid"></i>
+				</a>
+					<section
+						class="dropdown-menu aside-lg bg-white on animated fadeInLeft">
+						<div class="row m-l-none m-r-none m-t m-b text-center">
+							<div class="col-xs-4">
+								<div class="padder-v">
+									<a href="#admins"> <span class="m-b-xs block"> <i
+											class="i i-mail i-2x text-primary-lt"></i>
+									</span> <small class="text-muted">Admins</small>
+									</a>
+								</div>
+							</div>
+
+							<div class="col-xs-4">
+								<div class="padder-v">
+									<a href="#groups"> <span class="m-b-xs block"> <i
+											class="i i-map i-2x text-success-lt"></i>
+									</span> <small class="text-muted">Groups</small>
+									</a>
+								</div>
+							</div>
+
+							<div class="col-xs-4">
+								<div class="padder-v">
+									<a href="#books"> <span class="m-b-xs block"> <i
+											class="i i-calendar i-2x text-danger-lt"></i>
+									</span> <small class="text-muted">Books</small>
+									</a>
+								</div>
+							</div>
+
+							<div class="col-xs-4">
+								<div class="padder-v">
+									<a href="#users"> <span class="m-b-xs block"> <i
+											class="i i-paperplane i-2x text-info-lt"></i>
+									</span> <small class="text-muted">Users</small>
+									</a>
+								</div>
+							</div>
+
+						</div>
+					</section></li>
+			</ul> -->
+			<form
+				class="navbar-form navbar-left input-s-lg m-t m-l-n-xs hidden-xs hide"
+				role="search">
+				<div class="form-group">
+					<div class="input-group">
+						<span class="input-group-btn">
+							<button type="submit"
+								class="btn btn-sm bg-white b-white btn-icon">
+								<i class="fa fa-search"></i>
+							</button>
+						</span> <input type="text" class="form-control input-sm no-border"
+							placeholder="Search apps, projects...">
+					</div>
+				</div>
+			</form>
+
+			<!--	message area    -->
+
+			<ul class="nav navbar-nav navbar-right m-n hidden-xs nav-user user">
+				<li class="dropdown"><a href="javascript:void(0)"
+					class="dropdown-toggle" data-toggle="dropdown"><span
+						class="theme2-loginpanel" id="uid">Anonymous</span> <b
+						class="caret"></b> </a>
+					<ul class="dropdown-menu animated fadeInRight">
+<!-- 						<li><span class="arrow top"></span> <a href="#settings">Settings</a></li> -->
+<!-- 						<li><a href="#help">Help</a></li> -->
+<!-- 						<li class="divider"></li> -->
+						<li><span class="arrow top"></span><a href="#logout">Logout</a></li>
+					</ul></li>
+			</ul>
+		</header>
+		<section>
+			<section class="hbox stretch">
+				<!-- .aside -->
+				<aside class="aside-md hidden-print hidden-xs" id="nav">
+					<section class="vbox">
+						<section class="w-f scrollable">
+							<div class="slim-scroll theme2-menuarea" data-height="auto"
+								data-disable-fade-out="true" data-distance="0" data-size="10px"
+								data-railOpacity="0.2">
+								<div class="clearfix wrapper dk nav-user hidden-xs theme2">
+									<div class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+											<span class="hidden-nav-xs clear"> <span
+												class="block m-t-xs"> <strong
+													class="font-bold theme2-menuarea-fontcolor" id="uid2">Anonymous</strong>
+													<b class="caret"></b>
+											</span> <!-- <span class="text-muted text-xs block">Art Director</span> -->
+										</span>
+										</a>
+										<ul class="dropdown-menu animated fadeInRight m-t-xs">
+<!-- 											<li><span class="arrow top hidden-nav-xs"></span> <a href="#settings">Settings</a></li> -->
+<!-- 											<li><a href="#help">Help</a></li> -->
+<!-- 											<li class="divider"></li> -->
+											<li><span class="arrow top"></span><a href="#logout">Logout</a></li>
+										</ul>
+									</div>
+								</div>
+								<!-- nav -->
+								<nav class="nav-primary hidden-xs" id="sidebarContainer">
+									<!-- <div>
+									<ul class="nav nav-main" data-ride="collapse">
+
+										<li><a href="javascript:void(0)" class="auto"
+											id="adminMenu"> <i class="i i-statistics icon"> </i> <span
+												class="font-bold theme2-menuarea-fontcolor2">Admins</span>
+										</a></li>
+										
+										<li><a href="javascript:void(0)" class="auto"
+											id="groupMenu"> <i class="i i-statistics icon"> </i> <span
+												class="font-bold theme2-menuarea-fontcolor2">Groups</span>
+										</a></li>
+
+										<li><a href="javascript:void(0)" class="auto"
+											id="bookMenu"> <i class="i i-statistics icon"> </i> <span
+												class="font-bold theme2-menuarea-fontcolor2">Books</span>
+										</a></li>
+
+										<li><a href="javascript:void(0)" class="auto"
+											id="userMenu"> <i class="i i-statistics icon"> </i> <span
+												class="font-bold theme2-menuarea-fontcolor2">Users</span>
+										</a></li>
+										
+										<li><a href="javascript:void(0)" class="auto"
+											id="sessionMenu"> <i class="i i-statistics icon"> </i> <span
+												class="font-bold theme2-menuarea-fontcolor2">Sessions</span>
+										</a></li>
+
+									</ul>
+									</div> -->
+								</nav>
+								<!-- / nav -->
+							</div>
+						</section>
+						<footer
+							class="footer hidden-xs no-padder text-center-nav-xs theme2-footer">
+							<!-- <a href="modal.lockme.html" data-toggle="ajaxModal"
+								class="btn btn-icon icon-muted btn-inactive pull-right m-l-xs m-r-xs hidden-nav-xs">
+								<i class="i i-logout"></i>
+							</a> --> <a href="#nav" data-toggle="class:nav-xs"
+								class="btn btn-icon icon-muted btn-inactive m-l-xs m-r-xs">
+								<i class="i i-circleleft text"></i> <i
+								class="i i-circleright text-active"></i>
+							</a>
+						</footer>
+					</section>
+				</aside>
+				<!-- /.aside -->
+				<section id="content">
+					<section class="vbox">
+						<section class="scrollable padder">
+							<div class="row m-t">
+								<!-- Alert -->
+								<div id="statusArea"></div>
+								<div class="row m-l-sm m-b-lg" id="moduleTitleBar"></div>
+
+								<div class="row">
+
+									<div class="col-lg-8" style="background-color: 000000;"
+										id="filterArea">
+										<!--Filters goes here -->
+									</div>
+									<div class="col-lg-3 col-lg-offset-1"
+										style="background-color: 000000;" id="actionArea">
+										<!-- Action buttons goes here -->
+										<a href="javascript:void(0)"
+											class="btn btn-s-lg btn-primary m-b-xs pull-right m-r theme2-button-fab-style" style="visibility: hidden"
+											id="add">+ Add</a>
+										<div class="clearfix"></div>
+										<a href="javascript:void(0)"
+											class="btn btn-s-lg btn-primary pull-right m-r theme2-button-fab-style" id="search">Search</a>
+									</div>
+								</div>
+								<div class="row m-t-lg m-l" id="headerArea"></div>
+								<div class="row m-t-sm" id="rendererArea">
+									<!-- Content goes here -->
+
+
+
+
+								</div>
+
+
+
+								<!-- <div class="row">
+
+
+									<ul
+										class="list-group gutter list-group-lg list-group-sp sortable">
+										<li class="list-group-item bg-success" draggable="true"
+											style="display: block;"><span class="pull-right">
+												<a href="#"><i class="fa fa-pencil fa-fw m-r-xs"></i></a> <a
+												href="#"><i class="fa fa-plus fa-fw m-r-xs"></i></a> <a
+												href="#"><i class="fa fa-times fa-fw"></i></a>
+										</span> <span class="pull-left media-xs"><i
+												class="fa fa-sort text-muted fa m-r-sm"></i> 03</span>
+											<div class="clear text-white">Customizing components</div></li>
+										<li class="list-group-item bg-info" draggable="true"
+											style="display: block;"><span class="pull-right">
+												<a href="#"><i class="fa fa-pencil fa-fw m-r-xs"></i></a> <a
+												href="#"><i class="fa fa-plus fa-fw m-r-xs"></i></a> <a
+												href="#"><i class="fa fa-times fa-fw"></i></a>
+										</span> <span class="pull-left media-xs"><i
+												class="fa fa-sort text-muted fa m-r-sm"></i> 01</span>
+											<div class="clear text-white">Browser compatibility</div></li>
+										<li class="list-group-item bg-primary" draggable="true">
+											<span class="pull-right"> <a href="#"><i
+													class="fa fa-pencil fa-fw m-r-xs"></i></a> <a href="#"><i
+													class="fa fa-plus fa-fw m-r-xs"></i></a> <a href="#"><i
+													class="fa fa-times fa-fw"></i></a>
+										</span> <span class="pull-left media-xs"><i
+												class="fa fa-sort text-muted fa m-r-sm"></i> 02</span>
+											<div class="clear text-white">Looking for more example
+												templates</div>
+										</li>
+										<li class="list-group-item" draggable="true"><span
+											class="pull-right"> <a href="#"><i
+													class="fa fa-pencil icon-muted fa-fw m-r-xs"></i></a> <a
+												href="#"><i class="fa fa-plus icon-muted fa-fw m-r-xs"></i></a>
+												<a href="#"><i class="fa fa-times icon-muted fa-fw"></i></a>
+										</span> <span class="pull-left media-xs"><i
+												class="fa fa-sort text-muted fa m-r-sm"></i> 04</span>
+											<div class="clear">The fastest way to get started</div></li>
+										<li class="list-group-item" draggable="true"><span
+											class="pull-right"> <a href="#"><i
+													class="fa fa-pencil icon-muted fa-fw m-r-xs"></i></a> <a
+												href="#"><i class="fa fa-plus icon-muted fa-fw m-r-xs"></i></a>
+												<a href="#"><i class="fa fa-times icon-muted fa-fw"></i></a>
+										</span> <span class="pull-left media-xs"><i
+												class="fa fa-sort text-muted fa m-r-sm"></i> 05</span>
+											<div class="clear">HTML5 doctype required</div></li>
+									</ul>
+
+
+
+								</div> -->
+								<!-- <div class="col-md-6">
+									
+								</div>
+								<div class="col-md-6">
+									
+											
+								</div> -->
+							</div>
+						</section>
+					</section>
+					<a href="#" class="hide nav-off-screen-block"
+						data-toggle="class:nav-off-screen" data-target="#nav"></a>
+				</section>
+			</section>
+		</section>
+	</section>
+
+</body>
+</html>

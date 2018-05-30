@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5" xmlns="http://java.sun.com/xml/ns/javaee">
+
+	<!-- Servlets -->
+	<servlet>
+		<servlet-name>greetServlet</servlet-name>
+		<servlet-class>com.iglobal.bookit.server.GreetingServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>greetServlet</servlet-name>
+		<url-pattern>/bookit/greet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>login</servlet-name>
+		<servlet-class>com.iglobal.bookit.server.LoginServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>login</servlet-name>
+		<url-pattern>/bookit/login</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>admin</servlet-name>
+		<servlet-class>com.iglobal.bookit.server.AdminServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>admin</servlet-name>
+		<url-pattern>/bookit/admin</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>user</servlet-name>
+		<servlet-class>com.iglobal.bookit.server.UserServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>user</servlet-name>
+		<url-pattern>/bookit/user</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>adminupdate</servlet-name>
+		<servlet-class>com.iglobal.bookit.server.AdminUpdateServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>adminupdate</servlet-name>
+		<url-pattern>/bookit/adminupdate</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>adminnew</servlet-name>
+		<servlet-class>com.iglobal.bookit.server.AdminNewServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>adminnew</servlet-name>
+		<url-pattern>/bookit/adminnew</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>preview</servlet-name>
+		<servlet-class>com.iglobal.bookit.server.ImagePreviewServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>preview</servlet-name>
+		<url-pattern>/bookit/preview</url-pattern>
+		<http-method>POST</http-method>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>updatepicture</servlet-name>
+		<servlet-class>com.iglobal.bookit.server.AvatarUpdateImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>updatepicture</servlet-name>
+		<url-pattern>/bookit/updatepicture</url-pattern>
+		<http-method>POST</http-method>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>postfile</servlet-name>
+		<servlet-class>com.iglobal.bookit.server.PostServer</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>postfile</servlet-name>
+		<url-pattern>/bookit/postfile</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>downloadreport</servlet-name>
+		<servlet-class>com.iglobal.bookit.server.DownloadFileServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>downloadreport</servlet-name>
+		<url-pattern>/bookit/downloadreport</url-pattern>
+		<http-method>POST</http-method>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>controlServlet</servlet-name>
+		<servlet-class>com.iglobal.bookit.server.utils.ParamController</servlet-class>
+
+		<init-param>
+			<param-name>users</param-name>
+			<param-value>4</param-value>
+		</init-param>
+
+		<init-param>
+			<param-name>tabs</param-name>
+			<param-value>8</param-value>
+		</init-param>
+
+		<init-param>
+			<param-name>dbname</param-name>
+			<param-value>bookit</param-value>
+		</init-param>
+
+		<init-param>
+			<param-name>dbpassword</param-name>
+			<param-value></param-value>
+		</init-param>
+
+		<init-param>
+			<param-name>dbuser</param-name>
+			<param-value>root</param-value>
+		</init-param>
+
+		<init-param>
+			<param-name>dbport</param-name>
+			<param-value>3306</param-value>
+		</init-param>
+
+		<init-param>
+			<param-name>dbip</param-name>
+			<param-value>127.0.0.1</param-value>
+		</init-param>
+
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<!-- Default page to serve -->
+	<welcome-file-list>
+		<welcome-file>Bookit.html</welcome-file>
+	</welcome-file-list>
+
+</web-app>

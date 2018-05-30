@@ -1,0 +1,12 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		
+	</ui:style>
+	<g:HTMLPanel styleName="m-l m-b">
+	    <label class = "hidden-xs" ui:field="label"></label>
+	    <div class="clearfix"></div>
+	    <g:ListBox styleName="form-control theme2-widget-style" ui:field="dataBox"></g:ListBox>
+	</g:HTMLPanel>
+</ui:UiBinder> 

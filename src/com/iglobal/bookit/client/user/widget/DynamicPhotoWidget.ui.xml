@@ -1,0 +1,21 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		
+	</ui:style>
+	<g:HTMLPanel styleName="m-l m-b col-md-5 user-sortable">
+		<g:HTMLPanel styleName="pull-left">
+			<label class="hidden-xs m-l-sm user-sortable-form-label m-b-md" ui:field="label"></label>
+			<g:FormPanel ui:field="form">
+				<g:FileUpload ui:field="fileUpload" ></g:FileUpload>
+			</g:FormPanel>
+		</g:HTMLPanel>
+
+		<div class="pull-right col-md-3 user-sortable-avatar">
+			<a href="javascript:void(0)" class="thumbnail">
+				<img ui:field="imgElement" />
+			</a>
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

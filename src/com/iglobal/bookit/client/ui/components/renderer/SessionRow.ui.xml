@@ -1,0 +1,12 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+	
+	</ui:style>
+	<g:HTMLPanel styleName="row-style m-l m-b-xs">
+		<g:Label styleName="col-xs-5 col-sm-5 col-md-4 col-lg-4 m-r-xs m-l-sm" ui:field="emailField">johnsmith@iglobalgh.com</g:Label>
+		<g:Label styleName="hidden-xs hidden-sm col-md-4 col-lg-4 m-r-xs m-l-sm" ui:field="dateField">2014-02-01 12:08 GMT</g:Label>
+		<a href="javascript:void(0)" class="col-xs-5 col-sm-5 col-md-3 col-lg-3 m-l-sm row-edit" ui:field="actionField"> closed </a>
+	</g:HTMLPanel>
+</ui:UiBinder> 

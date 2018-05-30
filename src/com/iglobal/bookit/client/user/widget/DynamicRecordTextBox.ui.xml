@@ -1,0 +1,11 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+	</ui:style>
+	<g:HTMLPanel styleName="m-l m-b col-md-2 user-sortable-field">
+	    <label class = "hidden-xs m-l-sm user-sortable-form-label" ui:field="label"></label>
+	    <div class="clearfix"></div>
+	    <g:TextBox styleName="form-control no-border m-l-sm user-sortable-form" ui:field="textBox" />
+	</g:HTMLPanel>
+</ui:UiBinder> 

@@ -1,0 +1,21 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		
+	</ui:style>
+	<g:HTMLPanel styleName="m-b-xs col-md-12 summary-widget-style">
+	    <div class="col-md-12 m-b-sm">
+	        <span class="font-bold" ui:field="label">Label</span>
+	    </div>
+	    
+	    <g:HTMLPanel>
+	        <div class="col-md-12" ui:field="valueDisplay"></div>
+	        <g:SimplePanel ui:field="dynamicWidgetContainer"></g:SimplePanel>
+	    </g:HTMLPanel>
+	    
+	    <div class="pull-right">
+	        <g:Anchor href="javascript:void(0)" styleName="user-summary-anchor-style" ui:field="editAnchor"></g:Anchor>
+	    </div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

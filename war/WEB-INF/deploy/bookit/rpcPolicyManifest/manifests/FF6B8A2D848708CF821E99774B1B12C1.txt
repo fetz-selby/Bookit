@@ -1,0 +1,2 @@
+serviceClass: com.iglobal.bookit.client.AdminNewService
+path: F5B135ECEC181D4711303EF56281EA95.gwt.rpc

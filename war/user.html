@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="en" class="app">
+<head>
+<meta charset="utf-8" />
+<title>eBookit | Web Application</title>
+<meta name="description"
+	content="app, web app, responsive, admin dashboard, admin, flat, flat ui, ui kit, off screen nav" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1" />
+<link rel="stylesheet" href="css/app.v1.css" type="text/css" />
+<link rel="stylesheet" href="css/override_css.css" type="text/css" />
+<link rel="stylesheet" href="js/datepicker/datepicker.css" type="text/css" />
+
+<!--[if lt IE 9]> <script src="js/ie/html5shiv.js"></script> <script src="js/ie/respond.min.js"></script> <script src="js/ie/excanvas.js"></script> <![endif]-->
+<script src="js/app.v1.js"></script>
+<script src="js/app.plugin.js"></script>
+<!-- <script src="js/jquery-1.10.2.min.js"></script>
+ -->
+<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+<!-- <script src="js/bootstrap.min.js"></script>
+ -->
+<!-- <script src="js/datepicker/bootstrap-datepicker.js"></script>
+ -->
+
+<script type="text/javascript" language="javascript"
+	src="js/bootstrap-datepicker_new.js"></script>
+<script type="text/javascript" language="javascript"
+	src="js/bootstrap-timepicker.js"></script>
+
+<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+ -->
+<link rel="stylesheet" type="text/css" href="css/datepicker_new.css" />
+<link rel="stylesheet" type="text/css" href="css/sels_datepicker.css" />
+
+<link rel="stylesheet" type="text/css"
+	href="css/bootstrap-timepicker.css" />
+
+
+<script type="text/javascript" language="javascript"
+	src="bookit/bookit.nocache.js"></script>
+</head>
+<body class="">
+
+	<iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1'
+		style="position: absolute; width: 0; height: 0; border: 0"></iframe>
+
+	<!-- RECOMMENDED if your web app will not function without JavaScript enabled -->
+	<noscript>
+		<div
+			style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+			Your web browser must have JavaScript enabled in order for this
+			application to display correctly.</div>
+	</noscript>
+	<section class="vbox">
+		<header
+			class="bg-white header header-md navbar navbar-fixed-top-xs box-shadow">
+			<div class="navbar-header aside-md dk">
+				<a class="btn btn-link visible-xs"
+					data-toggle="class:nav-off-screen,open" data-target="#nav,html">
+					<i class="fa fa-bars"></i>
+				</a> <a href="index.html" class="navbar-brand"> <img
+					src="images/logo.png" class="m-r-sm" alt="scale"> <span
+					class="hidden-nav-xs">eBookit</span>
+				</a> <a class="btn btn-link visible-xs" data-toggle="dropdown"
+					data-target=".user"> <i class="fa fa-cog"></i>
+				</a>
+			</div>
+			<ul class="nav navbar-nav hidden-xs" style="display:none;">
+				<li class="dropdown"><a href="#" class="dropdown-toggle"
+					data-toggle="dropdown"> <i class="i i-grid"></i>
+				</a>
+					<section
+						class="dropdown-menu aside-lg bg-white on animated fadeInLeft">
+						<div class="row m-l-none m-r-none m-t m-b text-center">
+
+						</div>
+					</section></li>
+			</ul>
+			<form
+				class="navbar-form navbar-left input-s-lg m-t m-l-n-xs hidden-xs"
+				role="search" style="display:none;">
+				<div class="form-group">
+					<div class="input-group">
+						<span class="input-group-btn">
+							<button type="submit"
+								class="btn btn-sm bg-white b-white btn-icon">
+								<i class="fa fa-search"></i>
+							</button>
+						</span> <input type="text" class="form-control input-sm no-border"
+							placeholder="Search apps, projects...">
+					</div>
+				</div>
+			</form>
+
+			<!--	message area    -->
+
+			<ul class="nav navbar-nav navbar-right m-n hidden-xs nav-user user">
+				<li class="dropdown"><a href="javascript:void(0)"
+					class="dropdown-toggle" data-toggle="dropdown"><span id="uid">Anonymous</span>
+						<b class="caret"></b> </a>
+					<ul class="dropdown-menu animated fadeInRight">
+						<!-- 						<li><span class="arrow top"></span> <a href="#settings">Settings</a></li> -->
+<!-- 						<li><a href="#help">Help</a></li> -->
+<!-- 						<li class="divider"></li> -->
+						<li><span class="arrow top"></span><a href="#logout">Logout</a></li>
+					</ul></li>
+			</ul>
+		</header>
+		<section>
+			<section class="hbox stretch">
+				<!-- .aside -->
+				<aside class="bg-black aside-md hidden-print hidden-xs" id="nav">
+					<section class="vbox">
+						<section class="w-f scrollable">
+							<div class="slim-scroll" data-height="auto"
+								data-disable-fade-out="true" data-distance="0" data-size="10px"
+								data-railOpacity="0.2">
+								
+								<div class="wrapper dk nav-user hidden-xs theme2-user-sidemenu-top">
+									<div class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+											<span class="hidden-nav-xs clear"> <span
+												class="block m-t-xs"> <strong
+													class="font-bold text-lt" id="uid2">Anonymous</strong> <b
+													class="caret"></b>
+											</span> <!-- <span class="text-muted text-xs block">Art Director</span> -->
+										</span>
+										</a>
+										<ul class="dropdown-menu animated fadeInRight m-t-xs">
+											<!-- 											<li><span class="arrow top hidden-nav-xs"></span> <a href="#settings">Settings</a></li> -->
+<!-- 											<li><a href="#help">Help</a></li> -->
+<!-- 											<li class="divider"></li> -->
+											<li><span class="arrow top"></span><a href="#logout">Logout</a></li>
+										</ul>
+									</div>
+								</div>
+								
+								<!-- nav -->
+								<nav class="nav-primary hidden-xs">
+									<div class="text-muted text-sm hidden-nav-xs padder m-t-sm m-b-lg" id="moduleOptionPanel"></div>
+									<div class="col-lg-12 m-b-lg" id="listContainer"></div>
+									
+									<div id="itemListDiv" class="m-b-lg">
+										<ul class="nav nav-main" data-ride="collapse" id="itemList"></ul>
+									</div>
+									
+									<div class="col-lg-12 col-md-12 hidden-xs hidden-sm m-b-lg" id="notificationDisplayPanel">
+										<div class="font-bold m-b-lg gwt-hide" id="notiLabel">Notifications</div>
+									</div>
+								</nav>
+								<!-- / nav -->
+							</div>
+						</section>
+						<footer class="footer hidden-xs no-padder text-center-nav-xs">
+							<!-- <a href="modal.lockme.html" data-toggle="ajaxModal"
+								class="btn btn-icon icon-muted btn-inactive pull-right m-l-xs m-r-xs hidden-nav-xs">
+								<i class="i i-logout"></i>
+							</a> --> <a href="#nav" data-toggle="class:nav-xs"
+								class="btn btn-icon icon-muted btn-inactive m-l-xs m-r-xs">
+								<i class="i i-circleleft text"></i> <i
+								class="i i-circleright text-active"></i>
+							</a>
+						</footer>
+					</section>
+				</aside>
+				<!-- /.aside -->
+				<section id="content">
+					<section class="vbox">
+						<section class="scrollable padder content-panel-style gwt-hide" id="userPanel">
+							<div class="row m-t">
+								<!-- Alert -->
+								<div id="statusArea">
+									
+								</div>
+								<div class="row m-l-sm" >
+									<h3 id="modultTitleBar"></h3>
+								</div>
+
+								<div class="row">
+
+									<div class="col-lg-8" style="background-color: 000000;"
+										id="filterArea">
+										<!--Filters goes here -->
+									</div>
+									<div class="col-lg-3 col-lg-offset-1"
+										style="background-color: 000000;" id="actionArea">
+										<!-- Action buttons goes here -->
+										<!-- <a href="javascript:void(0)"
+											class="btn btn-s-lg btn-primary m-b-xs pull-right m-r"
+											id="add">+ Add</a> -->
+										<div class="clearfix"></div>
+										<a href="javascript:void(0)"
+											class="btn btn-s-lg btn-primary pull-right m-r not-show" 
+											id="saveBtn">Save</a>
+									</div>
+								</div>
+								<div class="row m-t-lg m-l" id="headerArea"></div>
+								<div class="row m-t-sm m-l-xs">
+									<div class="col-md-12" id="tabsPanel"></div>
+								</div>
+								<div class="col-md-12 tab-line m-b-md" id="tabLine"></div>
+								<div class="row m-t-sm user-content-style">
+								<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 m-r-lg">
+								 <div class="col-md-12">
+								 	<h3 class="" id ="moduleTitle"></h3>
+								 </div>
+								 <div class="" id="rendererArea"></div>
+								</div>
+								<div class="col-md-3 col-lg-3 m-r-sm" id="auxArea"></div>
+									<!-- Content goes here -->
+
+								</div>
+
+							</div>
+						</section>
+						
+						<section class="scrollable padder welcome-content-panel-style" id="welcomeSection">
+						</section>
+					</section>
+					<a href="#" class="hide nav-off-screen-block"
+						data-toggle="class:nav-off-screen" data-target="#nav"></a>
+				</section>
+			</section>
+		</section>
+	</section>
+	<div id="miscDiv"></div>
+</body>
+</html>

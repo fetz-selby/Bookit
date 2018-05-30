@@ -1,0 +1,14 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		
+	</ui:style>
+	<g:HTMLPanel styleName="col-md-3">
+	    <div class="col-md-12">
+	        <span class="font-bold" ui:field="fieldNameSpan"></span>
+	    </div>
+	    
+	    <g:SimplePanel styleName="col-md-12" ui:field="suggestContainer"></g:SimplePanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 

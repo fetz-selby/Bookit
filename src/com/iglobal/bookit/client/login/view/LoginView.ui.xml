@@ -1,0 +1,73 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		
+	</ui:style>
+	<g:HTMLPanel>
+<!-- 	    <div id="preloader">
+    <div id="status"><i class="fa fa-spinner fa-spin"></i></div>
+</div> -->
+
+<section>
+  
+    <div class="signinpanel">
+        
+        <div class="row">
+            
+            <div class="col-md-7">
+                
+                <div class="signin-info">
+                    <div class="logopanel pull-left">
+                        <h1><span>[</span> eBookit <span>]</span></h1>
+                    </div>
+                    <div class="clearfix"></div>
+                    <!-- logopanel -->
+                
+                    <div class="mb20"></div>
+                
+                    <h5><strong>Welcome to eBookit Login</strong></h5>
+                    <ul>
+                        <li><i class="fa fa-arrow-circle-o-right mr5"></i> Store, Retrieve and Update Records</li>
+                        <!--  <li><i class="fa fa-arrow-circle-o-right mr5"></i> Signature and Finger scanning capabilities included</li>  -->
+                        <li><i class="fa fa-arrow-circle-o-right mr5"></i> Compatible with most modern web browsers</li>
+                        <li><i class="fa fa-arrow-circle-o-right mr5"></i> Fully Responsive Administrative screen</li>
+                        <li><i class="fa fa-arrow-circle-o-right mr5"></i> Retina Ready</li>
+                        <li><i class="fa fa-arrow-circle-o-right mr5"></i> and much more...</li>
+                    </ul>
+                    <div class="mb20"></div>
+                </div><!-- signin0-info -->
+            
+            </div><!-- col-sm-7 -->
+            
+            <div class="col-md-5">
+                
+                <div method="post" action="http://themepixels.com/demo/webpage/bracket/index.html">
+                    <h4 class="nomargin">Sign In</h4>
+                    <p class="mt5 mb20">Login to access your account.</p>
+                
+                    <g:TextBox styleName="form-control uname" ui:field="usernameBox"/>
+                    <g:PasswordTextBox styleName="form-control pword" ui:field="passwordBox"/>
+                    <!-- <a href="#"><small>Forgot Your Password?</small></a> -->
+                    <g:Anchor styleName="btn btn-success btn-block" ui:field="signInBtn">Sign In</g:Anchor>
+                    
+                </div>
+            </div><!-- col-sm-5 -->
+            
+        </div><!-- row -->
+        
+        <div class="signup-footer">
+            <div class="pull-left">
+                &copy; 2014. All Rights Reserved.
+            </div>
+            <div class="pull-right">
+                Created By: <a href="http://www.iglobalgh.com/" target="_blank">iGlobal Company Ltd.</a>
+            </div>
+        </div>
+        
+    </div><!-- signin -->
+  
+</section>
+	    
+	</g:HTMLPanel>
+</ui:UiBinder> 

@@ -1,0 +1,90 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:c="urn:import:com.iglobal.bookit.client.ui.components">
+	<ui:style>
+		.main{width: 270px;}
+		.clearfix{clear:both; height: 0}
+	</ui:style>
+	<g:HTMLPanel styleName="{style.main}">
+		<section class="panel panel-default">
+			<header class="panel-heading">
+				<span class="h4" ui:field="formTitle"></span>
+				<span class="pull-right font-bold form-close-icon" ui:field="closeBtn">x</span>
+			</header>
+			<div class="panel-body">
+				<p class="text-muted">Please fill the information to continue</p>
+				<div class="form-group">
+					<label>Group Name</label>
+					<g:TextBox styleName="form-control parsley-validated"
+						ui:field="nameBox" />
+					<ul id="parsley-12152784410864115" class="parsley-error-list"
+						style="display: block;">
+						<li class="required" style="display: none;" ui:field="nameError">This value
+							is required.</li>
+					</ul>
+				</div>
+
+				<!-- <div class="form-group"> <c:CustomSuggestBox ui:field="permsSuggest"/> 
+					<ul id="parsley-010999707970768213" class="parsley-error-list" style="display: 
+					block;"> <li class="required" style="display: none;" ui:field="groupError">This 
+					value is required.</li> </ul> </div> -->
+
+				<div class="">
+					<label>Notification</label>
+					<div class="{style.clearfix}"></div>
+					<g:CheckBox styleName="parsley-validated"
+						ui:field="notiCheckBox" />
+					<ul id="parsley-12152784410864115" class="parsley-error-list"
+						style="display: block;">
+						<li class="required" style="display: none;" ui:field="notiError">This value
+							is required.</li>
+					</ul>
+				</div>
+
+
+
+				<div class="form-group">
+					<label>Permission(s)</label>
+					<g:SimplePanel ui:field="permContainer"></g:SimplePanel>
+					<ul id="parsley-010999707970768213" class="parsley-error-list"
+						style="display: block;">
+						<li class="required" style="display: none;" ui:field="groupError">This value
+							is required.</li>
+					</ul>
+				</div>
+
+				<div class="form-group form-status">
+					<label>Status</label>
+				</div>
+
+				<div class="form-group">
+					<div class="col-sm-6 pull-left form-status-action">
+						<g:RadioButton styleName="" ui:field="activeCheckBox"
+							name="state"></g:RadioButton>
+					</div>
+
+					<div class="col-sm-6 pull-left">
+						<label></label>
+						<g:RadioButton styleName="" ui:field="inActiveCheckBox"
+							name="state"></g:RadioButton>
+					</div>
+
+				</div>
+
+				<div class="clearfix"></div>
+
+				<div class="checkbox i-checks not-show">
+					<label class="parsley-success">
+						<g:CheckBox ui:field="termsBox" />
+						<i></i>
+						I agree to the
+						<a href="#" class="text-info">Terms of Service</a>
+					</label>
+				</div>
+			</div>
+			<footer class="panel-footer text-right bg-light lter">
+				<g:Button styleName="btn btn-primary btn-s-xs" ui:field="submitBtn">Submit</g:Button>
+			</footer>
+		</section>
+	</g:HTMLPanel>
+</ui:UiBinder> 

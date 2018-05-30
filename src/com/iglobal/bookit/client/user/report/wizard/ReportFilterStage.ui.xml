@@ -1,0 +1,26 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:u="urn:import:com.iglobal.bookit.client.user.widget">
+	<ui:style>
+		
+	</ui:style>
+	<g:HTMLPanel styleName="row report-panel-style">
+		 <div class="col-md-11 user-report-help m-l-lg">
+	        <span class="font-bold m-r-md user-report-help-text"><p>Dependiing on the configuration of the Book set </p><p> by the Administrator, filters may not be shown.</p><p> Please contact Administrator for </p><p>further options. </p></span>
+	    </div>
+	    
+		<g:SimplePanel styleName="col-md-12" ui:field="filterPanel" />
+		<g:FlowPanel styleName="col-md-12" ui:field="fieldPanel" />
+		<div class="row report-draggable-container">
+		<div class="col-md-12 m-b-md report-draggable-info-style gwt-hide" ui:field="fieldArrangeLabelDiv">
+		    Arrange the order of report fields
+		</div>
+		<g:SimplePanel styleName="col-md-12" ui:field="draggableContainer" />
+		</div>
+		
+		<div class="col-md-12">
+			<g:Anchor href="javascript:void(0)" styleName="btn btn-s-lg btn-primary pull-right m-r-sm" ui:field="nextBtn" />
+			<g:Anchor href="javascript:void(0)" styleName="btn btn-s-lg btn-primary pull-left m-l-sm" ui:field="backBtn" />
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

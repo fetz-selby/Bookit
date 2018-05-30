@@ -1,0 +1,18 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.img-style{width: 25px; height: 25px;}
+		.img-style:hover{cursor: pointer;}
+	</ui:style>
+	<g:HTMLPanel styleName="col-md-1 tab zero-padding" ui:field="mainPanel">
+	    <div class="col-md-12 tab-indicator" ui:field="tabTypeIndicator"></div>
+	    <div class="col-md-12" ui:field="activeDiv">
+	        <div ui:field="activeIndicator">
+	        	<g:Image styleName="pull-left {style.img-style} m-r-xs" ui:field="moduleImg" />
+	        	<div class="pull-left"><span class="tab-title" ui:field="titleSpan">Title Here</span></div>
+	        </div>
+	        <g:HTMLPanel styleName="pull-right" ui:field="closeBtn"><span class="tab-close pull-right">x</span></g:HTMLPanel>
+	    </div>
+	</g:HTMLPanel>
+</ui:UiBinder> 
